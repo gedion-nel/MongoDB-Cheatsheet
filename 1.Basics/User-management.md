@@ -1,18 +1,23 @@
-# MongoDB User Management Examples
-
-This file contains practical examples for managing MongoDB users.
-
-## Example 1: Create a New User
-
-To create a new user with `readWrite` access to the `fruit` database:
-
+### Creating a user:
 ```javascript
 db.runCommand(
-  {
-    createUser: "cooluser",
-    pwd: "newpassword",
-    roles: [
-      { role: "readWrite", db: "fruit" }
-    ]
-  }
-)
+{
+  createUser: "cooluser",
+  pwd: "newpassword",
+  roles: [
+    { role: "readWrite", db: "fruit" }
+  ]
+})
+
+### Showing a user:
+```javascript
+show users
+
+### Deleting a user:
+```javascript
+db.dropUser("cooluser")
+
+
+
+
+
