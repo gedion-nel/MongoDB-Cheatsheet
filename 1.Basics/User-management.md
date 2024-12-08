@@ -1,5 +1,7 @@
-### Creating a user:
+### User Management Commands
+
 ```javascript
+// Creating a user
 db.runCommand(
 {
   createUser: "cooluser",
@@ -8,3 +10,15 @@ db.runCommand(
     { role: "readWrite", db: "fruit" }
   ]
 })
+
+// Showing users
+show users
+
+// Deleting a user
+db.dropUser("cooluser"))
+
+
+
+
+
+
