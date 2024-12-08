@@ -1,6 +1,3 @@
-### User Management Commands
-
-```javascript
 // Creating a user
 db.runCommand(
 {
@@ -16,7 +13,6 @@ show users
 
 // Deleting a user
 db.dropUser("cooluser"))
-
 
 
 
